@@ -1,8 +1,14 @@
-import React from 'react';
-import { Calendar, ArrowLeft, CheckCircle2, Sparkles, ShieldCheck } from 'lucide-react';
-import Button from '../common/Button';
-import Badge from '../common/Badge';
-import { images } from '../../assets/images';
+import React from "react";
+import {
+  Calendar,
+  ArrowLeft,
+  CheckCircle2,
+  Sparkles,
+  ShieldCheck,
+} from "lucide-react";
+import Button from "../common/Button";
+import Badge from "../common/Badge";
+import { images } from "../../assets/images";
 
 export default function HeroSection() {
   return (
@@ -13,7 +19,6 @@ export default function HeroSection() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          
           {/* Right Column: Hero Text & CTAs */}
           <div className="lg:col-span-7 flex flex-col items-start text-right">
             {/* Top pill badge */}
@@ -23,13 +28,18 @@ export default function HeroSection() {
             </div>
 
             {/* Headline */}
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.85rem] font-extrabold text-forest-950 font-cairo leading-snug sm:leading-[1.25] tracking-tight">
-              رحلتكِ نحو <span className="text-forest-700 underline decoration-forest-300 decoration-wavy decoration-2">جسم صحي</span> وحياة متوازنة تبدأ من هنا
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.85rem] font-extrabold text-forest-950 font-cairo !leading-[1.2] sm:leading-[1.25] tracking-tight">
+              رحلتكِ نحو{" "}
+              <span className="text-forest-700 underline decoration-forest-300 decoration-wavy decoration-2">
+                جسم صحي
+              </span>{" "}
+              وحياة متوازنة تبدأ من هنا
             </h1>
 
             {/* Sub-headline */}
-            <p className="mt-6 text-base sm:text-lg md:text-xl text-charcoal-700 leading-relaxed max-w-2xl font-normal">
-              نساعدك على بناء عادات غذائية صحية من خلال خطط علمية متوازنة تناسب احتياجاتك وأسلوب حياتك، دون حرمان قاسي أو استنزاف لطاقتك.
+            <p className="mt-8 text-base sm:text-lg md:text-xl text-charcoal-700 leading-relaxed max-w-2xl font-normal">
+              نساعدك على بناء عادات غذائية صحية من خلال خطط علمية متوازنة تناسب
+              احتياجاتك وأسلوب حياتك، دون حرمان قاسي أو استنزاف لطاقتك.
             </p>
 
             {/* Key feature pills */}
@@ -40,15 +50,21 @@ export default function HeroSection() {
               </div>
               <div className="flex items-center gap-2 bg-white/70 backdrop-blur-xs p-2.5 rounded-xl border border-sand-300/60 shadow-xs">
                 <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-forest-600 shrink-0" />
-                <span className="font-medium">علاج جذري لمقاومة الإنسولين وتكيس المبايض</span>
+                <span className="font-medium">
+                  علاج جذري لمقاومة الإنسولين وتكيس المبايض
+                </span>
               </div>
               <div className="flex items-center gap-2 bg-white/70 backdrop-blur-xs p-2.5 rounded-xl border border-sand-300/60 shadow-xs">
                 <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-forest-600 shrink-0" />
-                <span className="font-medium">متابعة شخصية مستمرة ودعم أسبوعي</span>
+                <span className="font-medium">
+                  متابعة شخصية مستمرة ودعم أسبوعي
+                </span>
               </div>
               <div className="flex items-center gap-2 bg-white/70 backdrop-blur-xs p-2.5 rounded-xl border border-sand-300/60 shadow-xs">
                 <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-forest-600 shrink-0" />
-                <span className="font-medium">استشارات حضورية وأونلاين مرنة</span>
+                <span className="font-medium">
+                  استشارات حضورية وأونلاين مرنة
+                </span>
               </div>
             </div>
 
@@ -80,14 +96,15 @@ export default function HeroSection() {
             {/* Reassurance text */}
             <div className="mt-6 flex items-center gap-2 text-xs text-charcoal-400">
               <ShieldCheck className="w-4 h-4 text-forest-500" />
-              <span>الحجز مباشر وسريع عبر الواتساب بدون تعقيدات أو دفع إلكتروني مسبق</span>
+              <span>
+                الحجز مباشر وسريع عبر الواتساب بدون تعقيدات أو دفع إلكتروني مسبق
+              </span>
             </div>
           </div>
 
           {/* Left Column: Editorial Wellness Visual */}
           <div className="lg:col-span-5 relative">
             <div className="relative mx-auto max-w-md lg:max-w-none">
-              
               {/* Outer decorative card frame */}
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-sand-50 aspect-[4/5] sm:aspect-[4/4.5] lg:aspect-[4/5]">
                 <img
@@ -96,7 +113,7 @@ export default function HeroSection() {
                   className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700"
                   loading="eager"
                 />
-                
+
                 {/* Subtle gradient vignette overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-forest-950/40 via-transparent to-transparent pointer-events-none" />
 
@@ -123,10 +140,8 @@ export default function HeroSection() {
                   استشارات تغذية فردية
                 </span>
               </div>
-
             </div>
           </div>
-
         </div>
       </div>
     </section>
